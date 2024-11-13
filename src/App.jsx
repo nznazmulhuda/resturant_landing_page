@@ -1,9 +1,11 @@
+import Navbar from "./components/navbar/Navbar";
+
 function App() {
   return (
     <>
-      <h1>Project init</h1>
+      <Navbar />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
