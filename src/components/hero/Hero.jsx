@@ -1,16 +1,23 @@
 import style from "./style.module.css";
-import hero_image from "../../assets/hero_image.png";
 import flower from "../../assets/flower.png";
 
 function Hero() {
   return (
     <section className={`${style.hero} pt-[108px]`}>
       {/* inner data */}
-      <div className="max-w-[1320px] mx-auto flex items-center pt-[130px] pb-[160px]">
+      <div
+        className={`max-w-[1320px] mx-auto flex items-center pt-[130px] pb-[160px] justify-center relative`}
+      >
         {/* left content */}
         <aside>
-          {/* heading */}
-          <h1>Taste the authentic Saudi cuisine</h1>
+          <div
+            className={`${style.heading_bg} translate-x-[13%] -translate-y-14 relative z-10`}
+          >
+            {/* heading */}
+            <h1 className={`${style.heading}`}>
+              Taste the authentic Saudi cuisine
+            </h1>
+          </div>
 
           {/* description */}
           <p>
@@ -23,13 +30,9 @@ function Hero() {
 
         {/* right content */}
         <aside>
-          <figure className="flex items-center relative">
+          <figure className="flex items-center relative -translate-x-[15%]">
             {/* image */}
-            <img
-              className="w-[700px] h-[649px]"
-              src={hero_image}
-              alt="hero image"
-            />
+            <div className={`${style.image}`}></div>
 
             {/* offer */}
             <figcaption
