@@ -1,5 +1,6 @@
 import style from "./style.module.css";
 import flower from "../../assets/flower.png";
+import Button from "../shared/button/Button";
 
 function Hero() {
   return (
@@ -17,15 +18,15 @@ function Hero() {
             <h1 className={`${style.heading}`}>
               Taste the authentic Saudi cuisine
             </h1>
+
+            {/* description */}
+            <p className="w-[559px] text-white font-roboto text-2xl leading-8 font-normal mt-4">
+              Among the best Saudi chefs in the world, serving you something
+              beyond flavor.
+            </p>
+
+            <Button className={"mt-[38px]"}>Explore Menu</Button>
           </div>
-
-          {/* description */}
-          <p>
-            Among the best Saudi chefs in the world, serving you something
-            beyond flavor.
-          </p>
-
-          <button>Explore Menu</button>
         </aside>
 
         {/* right content */}

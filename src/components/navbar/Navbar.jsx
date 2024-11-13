@@ -1,4 +1,5 @@
 import Logo from "../../assets/logo_res.png";
+import Button from "../shared/button/Button";
 
 function Navbar() {
   return (
@@ -27,9 +28,7 @@ function Navbar() {
 
         {/* right side */}
         <aside>
-          <button className="bg-Yellow text-Text_Primary px-5 py-[10px] font-roboto text-[16px] font-bold leading-[24px] uppercase">
-            Book a table
-          </button>
+          <Button>Book a table</Button>
         </aside>
       </nav>
     </>
