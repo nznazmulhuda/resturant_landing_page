@@ -7,6 +7,7 @@ export default {
         rale: "Raleway",
         roboto: "Roboto",
         poppins: "poppins",
+        bebas: "bebas neue",
       },
       colors: {
         Yellow: "#FEBF00",
